@@ -1,7 +1,7 @@
-From aa63884f95d3607acb3e133c8fa415c0a91b981b Mon Sep 17 00:00:00 2001
+From 731e072968e85c79bba9be6b7581d58270792996 Mon Sep 17 00:00:00 2001
 From: yangtao <690377261@qq.com>
 Date: Tue, 15 May 2012 14:13:33 +0800
-Subject: [PATCH 2/2] ooo_y
+Subject: [PATCH 2/5] ooo_y
 
 ---
  Dog.java         |   10 +++++

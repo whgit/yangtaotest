@@ -1,0 +1,127 @@
+From 08e00a146f1da3dcfc62bdcdcbd5f2908e2964b3 Mon Sep 17 00:00:00 2001
+From: yangtao <690377261@qq.com>
+Date: Tue, 15 May 2012 14:46:46 +0800
+Subject: [PATCH 5/5] delete bak
+
+---
+ "Dog.java - \270\261\261\276.bak" |   10 ---------
+ Dog.java.bak                      |    6 -----
+ Test004.java.bak                  |   40 -------------------------------------
+ Test007.java.bak                  |   24 ----------------------
+ 4 files changed, 0 insertions(+), 80 deletions(-)
+ delete mode 100644 "Dog.java - \270\261\261\276.bak"
+ delete mode 100644 Dog.java.bak
+ delete mode 100644 Test004.java.bak
+ delete mode 100644 Test007.java.bak
+
+diff --git "a/Dog.java - \270\261\261\276.bak" "b/Dog.java - \270\261\261\276.bak"
+deleted file mode 100644
+index 188e8e5..0000000
+--- "a/Dog.java - \270\261\261\276.bak"	
++++ /dev/null
+@@ -1,10 +0,0 @@
+-class Dog{
+-	String name;
+-	int age;
+-	String Color;
+-	
+-	void jump(){
+-	System.out.println("jump");
+-	
+-	}
+-	}
+\ No newline at end of file
+diff --git a/Dog.java.bak b/Dog.java.bak
+deleted file mode 100644
+index 0ed142b..0000000
+--- a/Dog.java.bak
++++ /dev/null
+@@ -1,6 +0,0 @@
+-class Dog{
+-	String name;
+-	int age;
+-	String Color;
+-	
+-	void jump()
+\ No newline at end of file
+diff --git a/Test004.java.bak b/Test004.java.bak
+deleted file mode 100644
+index 2283d68..0000000
+--- a/Test004.java.bak
++++ /dev/null
+@@ -1,40 +0,0 @@
+-public class Test004{
+-	public static void main(String args[]){
+-			char a= '汉';
+-			System.out.println(a);
+-			fuction1();
+-			fuction1(a);
+-			fuction2();
+-		}
+-	
+-	public static void fuction1(){
+-			boolean b = false;
+-			boolean c = true;
+-			//boolean d = 0;
+-			System.out.println("boolean false = " + b);
+-			System.out.println("boolean true = " + c);
+-			//System.out.prinln("boolean 0 = " + d);
+-		} 
+-	
+-	public static void fuction1(char param){
+-			System.out.println("char字符打印:"+param);
+-		} 
+-	
+-	public static void fuction2(){
+-			byte b = 0;
+-			short s = 0;
+-			int i = 0;
+-			long l = 0;
+-			float f = 0.1f;
+-			double d = 0;
+-			int j = (int)0.5*10;
+-			
+-		
+-			System.out.println("j="+j);
+-		} 
+-		
+-		
+-		
+-	}
+-	
+-	
+\ No newline at end of file
+diff --git a/Test007.java.bak b/Test007.java.bak
+deleted file mode 100644
+index a660424..0000000
+--- a/Test007.java.bak
++++ /dev/null
+@@ -1,24 +0,0 @@
+-
+-public class Test007{
+-	public static void main(String args[]){
+-		double s = 83;
+-		String str = new String();
+-		str = fuction1(s);
+-		System.out.println("小明的考试结果是："+str);
+-		}
+-
+-	
+-	public static String fuction1(double score){
+-		if(score < 60){
+-				return "不及格";
+-			}else if(score>=90){
+-				return "优秀";
+-			}else if(score>=80){
+-				return "良";
+-			}else if(score>=60){
+-				return "及格";
+-			}else return "没有考试或找不到分数或分数出错";
+-			//return null;
+-		}
+-
+-}
+\ No newline at end of file
+-- 
+1.7.6.msysgit.0
+

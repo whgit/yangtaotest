@@ -1,0 +1,40 @@
+From 6626b28fe59cbda5d2bc1941470165f72aaece5d Mon Sep 17 00:00:00 2001
+From: yangtao <690377261@qq.com>
+Date: Tue, 15 May 2012 14:45:37 +0800
+Subject: [PATCH 4/5] dfgd
+
+---
+ .gitignore   |    3 +++
+ Dog.java.bak |    6 +-----
+ 2 files changed, 4 insertions(+), 5 deletions(-)
+
+diff --git a/.gitignore b/.gitignore
+index 0f182a0..de03327 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -4,3 +4,6 @@
+ *.jar
+ *.war
+ *.ear
++*.bak
++*.class
++*.log
+diff --git a/Dog.java.bak b/Dog.java.bak
+index 188e8e5..0ed142b 100644
+--- a/Dog.java.bak
++++ b/Dog.java.bak
+@@ -3,8 +3,4 @@ class Dog{
+ 	int age;
+ 	String Color;
+ 	
+-	void jump(){
+-	System.out.println("jump");
+-	
+-	}
+-	}
+\ No newline at end of file
++	void jump()
+\ No newline at end of file
+-- 
+1.7.6.msysgit.0
+
