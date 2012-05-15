@@ -3,8 +3,4 @@ class Dog{
 	int age;
 	String Color;
 	
-	void jump(){
-	System.out.println("jump");
-	
-	}
-	}
+	void jump()
