@@ -1,0 +1,809 @@
+From bdd0936ae6a4290fa2db576063e494e3aa8f9c8b Mon Sep 17 00:00:00 2001
+From: yangtao <690377261@@qq.com>
+Date: Tue, 15 May 2012 15:12:18 +0800
+Subject: [PATCH 6/6] sss
+
+---
+ 0001-.patch           |    4 +-
+ 0002-ooo_y.patch      |    4 +-
+ 0003-rf.patch         |  476 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 0004-dfgd.patch       |   40 ++++
+ 0005-delete-bak.patch |  127 +++++++++++++
+ Dog.java.bak          |   10 -
+ Test004.java.bak      |   40 ----
+ Test007.java.bak      |   24 ---
+ 8 files changed, 647 insertions(+), 78 deletions(-)
+ create mode 100644 0003-rf.patch
+ create mode 100644 0004-dfgd.patch
+ create mode 100644 0005-delete-bak.patch
+ delete mode 100644 Dog.java.bak
+ delete mode 100644 Test004.java.bak
+ delete mode 100644 Test007.java.bak
+
+diff --git a/0001-.patch b/0001-.patch
+index 6358e94..7361725 100644
+--- a/0001-.patch
++++ b/0001-.patch
+@@ -1,7 +1,7 @@
+-From 4241e5734360bc7dcca8955e3cc08a562462225e Mon Sep 17 00:00:00 2001
++From 10c374741edeb89fae0a1f3c59d6a87624db1542 Mon Sep 17 00:00:00 2001
+ From: yangtao <690377261@qq.com>
+ Date: Tue, 15 May 2012 13:59:07 +0800
+-Subject: [PATCH] =?UTF-8?q?=E6=B5=8B=E8=AF=95=20=E8=A1=A5=E4=B8=81?=
++Subject: [PATCH 1/5] =?UTF-8?q?=E6=B5=8B=E8=AF=95=20=E8=A1=A5=E4=B8=81?=
+ MIME-Version: 1.0
+ Content-Type: text/plain; charset=UTF-8
+ Content-Transfer-Encoding: 8bit
+diff --git a/0002-ooo_y.patch b/0002-ooo_y.patch
+index 2a6ad53..73d9801 100644
+--- a/0002-ooo_y.patch
++++ b/0002-ooo_y.patch
+@@ -1,7 +1,7 @@
+-From aa63884f95d3607acb3e133c8fa415c0a91b981b Mon Sep 17 00:00:00 2001
++From 731e072968e85c79bba9be6b7581d58270792996 Mon Sep 17 00:00:00 2001
+ From: yangtao <690377261@qq.com>
+ Date: Tue, 15 May 2012 14:13:33 +0800
+-Subject: [PATCH 2/2] ooo_y
++Subject: [PATCH 2/5] ooo_y
+ 
+ ---
+  Dog.java         |   10 +++++
+diff --git a/0003-rf.patch b/0003-rf.patch
+new file mode 100644
+index 0000000..f7f743c
+--- /dev/null
++++ b/0003-rf.patch
+@@ -0,0 +1,476 @@
++From 23318d09d6dd8776d66b4e2c023cde3b28734659 Mon Sep 17 00:00:00 2001
++From: yangtao <690377261@qq.com>
++Date: Tue, 15 May 2012 14:38:34 +0800
++Subject: [PATCH 3/5] rf
++
++---
++ 0001-.patch                       |   18 ++
++ 0002-ooo_y.patch                  |  412 +++++++++++++++++++++++++++++++++++++
++ "Dog.java - \270\261\261\276.bak" |   10 +
++ 3 files changed, 440 insertions(+), 0 deletions(-)
++ create mode 100644 0001-.patch
++ create mode 100644 0002-ooo_y.patch
++ create mode 100644 "Dog.java - \270\261\261\276.bak"
++
++diff --git a/0001-.patch b/0001-.patch
++new file mode 100644
++index 0000000..6358e94
++--- /dev/null
+++++ b/0001-.patch
++@@ -0,0 +1,18 @@
+++From 4241e5734360bc7dcca8955e3cc08a562462225e Mon Sep 17 00:00:00 2001
+++From: yangtao <690377261@qq.com>
+++Date: Tue, 15 May 2012 13:59:07 +0800
+++Subject: [PATCH] =?UTF-8?q?=E6=B5=8B=E8=AF=95=20=E8=A1=A5=E4=B8=81?=
+++MIME-Version: 1.0
+++Content-Type: text/plain; charset=UTF-8
+++Content-Transfer-Encoding: 8bit
+++
+++---
+++ 0 files changed, 0 insertions(+), 0 deletions(-)
+++ create mode 100644 ssss.txt
+++
+++diff --git a/ssss.txt b/ssss.txt
+++new file mode 100644
+++index 0000000..e69de29
+++-- 
+++1.7.6.msysgit.0
+++
++diff --git a/0002-ooo_y.patch b/0002-ooo_y.patch
++new file mode 100644
++index 0000000..2a6ad53
++--- /dev/null
+++++ b/0002-ooo_y.patch
++@@ -0,0 +1,412 @@
+++From aa63884f95d3607acb3e133c8fa415c0a91b981b Mon Sep 17 00:00:00 2001
+++From: yangtao <690377261@qq.com>
+++Date: Tue, 15 May 2012 14:13:33 +0800
+++Subject: [PATCH 2/2] ooo_y
+++
+++---
+++ Dog.java         |   10 +++++
+++ Dog.java.bak     |   10 +++++
+++ Hello.java       |    5 +++
+++ Love.java        |    5 +++
+++ NewThread.java   |   29 +++++++++++++++
+++ Test004.java     |   40 +++++++++++++++++++++
+++ Test004.java.bak |   40 +++++++++++++++++++++
+++ Test007.java     |   28 +++++++++++++++
+++ Test007.java.bak |   24 ++++++++++++
+++ TestFor.java     |  103 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++ TestJava.java    |   11 ++++++
+++ 11 files changed, 305 insertions(+), 0 deletions(-)
+++ create mode 100644 Dog.java
+++ create mode 100644 Dog.java.bak
+++ create mode 100644 Hello.java
+++ create mode 100644 Love.java
+++ create mode 100644 NewThread.java
+++ create mode 100644 Test004.java
+++ create mode 100644 Test004.java.bak
+++ create mode 100644 Test007.java
+++ create mode 100644 Test007.java.bak
+++ create mode 100644 TestFor.java
+++ create mode 100644 TestJava.java
+++
+++diff --git a/Dog.java b/Dog.java
+++new file mode 100644
+++index 0000000..68b54d0
+++--- /dev/null
++++++ b/Dog.java
+++@@ -0,0 +1,10 @@
++++class Dog{
++++	String name;
++++	int age;
++++	String color;
++++	
++++	void jump(){
++++	System.out.println("jump");
++++	
++++	}
++++	}
+++\ No newline at end of file
+++diff --git a/Dog.java.bak b/Dog.java.bak
+++new file mode 100644
+++index 0000000..188e8e5
+++--- /dev/null
++++++ b/Dog.java.bak
+++@@ -0,0 +1,10 @@
++++class Dog{
++++	String name;
++++	int age;
++++	String Color;
++++	
++++	void jump(){
++++	System.out.println("jump");
++++	
++++	}
++++	}
+++\ No newline at end of file
+++diff --git a/Hello.java b/Hello.java
+++new file mode 100644
+++index 0000000..3d296c3
+++--- /dev/null
++++++ b/Hello.java
+++@@ -0,0 +1,5 @@
++++public class Hello{
++++	public static void main(String args[]){
++++			System.out.println("Hello world!");
++++		}
++++	}
+++\ No newline at end of file
+++diff --git a/Love.java b/Love.java
+++new file mode 100644
+++index 0000000..8b8294f
+++--- /dev/null
++++++ b/Love.java
+++@@ -0,0 +1,5 @@
++++public class Love{
++++	public static void main(String args[]){
++++			System.out.println("Baby,I love you!");
++++		}
++++}
+++diff --git a/NewThread.java b/NewThread.java
+++new file mode 100644
+++index 0000000..b471fd4
+++--- /dev/null
++++++ b/NewThread.java
+++@@ -0,0 +1,29 @@
++++
++++
++++
++++public class NewThread extends Thread{
++++//Thread worker = new Thread();
++++private String word;
++++private int delay;
++++
++++public NewThread(String whatToSay, int delayTime){
++++	word = whatToSay;
++++	delay = delayTime;
++++}
++++public void run(){
++++	try{
++++		for(;;){
++++			System.out.println(word + " ");
++++			Thread.sleep(delay);//wait until next time
++++		}
++++	}catch(InterruptedException e){
++++		return; //end this Thread
++++	}
++++}
++++public static void main(String[] args){
++++	new NewThread("PING",33).start();
++++	new NewThread("PONG",100).start();
++++	
++++}
++++
++++}
+++diff --git a/Test004.java b/Test004.java
+++new file mode 100644
+++index 0000000..f95b3da
+++--- /dev/null
++++++ b/Test004.java
+++@@ -0,0 +1,40 @@
++++public class Test004{
++++	public static void main(String args[]){
++++			char a= '汉';
++++			System.out.println(a);
++++			fuction1();
++++			fuction1(a);
++++			fuction2();
++++		}
++++	
++++	public static void fuction1(){
++++			boolean b = false;
++++			boolean c = true;
++++			//boolean d = 0;
++++			System.out.println("boolean false = " + b);
++++			System.out.println("boolean true = " + c);
++++			//System.out.prinln("boolean 0 = " + d);
++++		} 
++++	
++++	public static void fuction1(char param){
++++			System.out.println("char字符打印:"+param);
++++		} 
++++	
++++	public static void fuction2(){
++++			byte b = 0;
++++			short s = 0;
++++			int i = 0;
++++			long l = 0;
++++			float f = 0.1f;
++++			double d = 0;
++++			int j = (int)(0.5*10);
++++			
++++		
++++			System.out.println("j="+j);
++++		} 
++++		
++++		
++++		
++++	}
++++	
++++	
+++\ No newline at end of file
+++diff --git a/Test004.java.bak b/Test004.java.bak
+++new file mode 100644
+++index 0000000..2283d68
+++--- /dev/null
++++++ b/Test004.java.bak
+++@@ -0,0 +1,40 @@
++++public class Test004{
++++	public static void main(String args[]){
++++			char a= '汉';
++++			System.out.println(a);
++++			fuction1();
++++			fuction1(a);
++++			fuction2();
++++		}
++++	
++++	public static void fuction1(){
++++			boolean b = false;
++++			boolean c = true;
++++			//boolean d = 0;
++++			System.out.println("boolean false = " + b);
++++			System.out.println("boolean true = " + c);
++++			//System.out.prinln("boolean 0 = " + d);
++++		} 
++++	
++++	public static void fuction1(char param){
++++			System.out.println("char字符打印:"+param);
++++		} 
++++	
++++	public static void fuction2(){
++++			byte b = 0;
++++			short s = 0;
++++			int i = 0;
++++			long l = 0;
++++			float f = 0.1f;
++++			double d = 0;
++++			int j = (int)0.5*10;
++++			
++++		
++++			System.out.println("j="+j);
++++		} 
++++		
++++		
++++		
++++	}
++++	
++++	
+++\ No newline at end of file
+++diff --git a/Test007.java b/Test007.java
+++new file mode 100644
+++index 0000000..d0f9f04
+++--- /dev/null
++++++ b/Test007.java
+++@@ -0,0 +1,28 @@
++++
++++public class Test007{
++++	public static void main(String args[]){
++++		double s = 83;
++++		String str = new String();
++++		str = fuction1(s);
++++		System.out.println("小明的考试结果是："+str);
++++		}
++++
++++	
++++	public static String fuction1(double score){
++++		if(score < 60){
++++				return "不及格";
++++		}
++++		else if(score>=90){
++++				return "优秀";
++++		}
++++		else if(score>=80){
++++				return "良";
++++		}
++++		else if(score>=60){
++++				return "及格";
++++		}
++++		else return "没有考试或找不到分数或分数出错";
++++			//return null;
++++		}
++++
++++}
+++\ No newline at end of file
+++diff --git a/Test007.java.bak b/Test007.java.bak
+++new file mode 100644
+++index 0000000..a660424
+++--- /dev/null
++++++ b/Test007.java.bak
+++@@ -0,0 +1,24 @@
++++
++++public class Test007{
++++	public static void main(String args[]){
++++		double s = 83;
++++		String str = new String();
++++		str = fuction1(s);
++++		System.out.println("小明的考试结果是："+str);
++++		}
++++
++++	
++++	public static String fuction1(double score){
++++		if(score < 60){
++++				return "不及格";
++++			}else if(score>=90){
++++				return "优秀";
++++			}else if(score>=80){
++++				return "良";
++++			}else if(score>=60){
++++				return "及格";
++++			}else return "没有考试或找不到分数或分数出错";
++++			//return null;
++++		}
++++
++++}
+++\ No newline at end of file
+++diff --git a/TestFor.java b/TestFor.java
+++new file mode 100644
+++index 0000000..edf7bf7
+++--- /dev/null
++++++ b/TestFor.java
+++@@ -0,0 +1,103 @@
++++
++++public class TestFor{
++++	public static void main(String args[]){
++++		double s = 83;
++++		int r = 45 ;
++++		String str = new String();
++++		str = fuction1(s);
++++		str = fuction2(s);
++++		str = fuction3(s);
++++		str = fuction4(s);
++++		str = fuction5(r);
++++		System.out.println("运行结束！");
++++		}
++++
++++	/**
++++	for 循环练习
++++	*/
++++	public static String fuction1(double score){
++++		System.out.println("for 循环练习 ：");
++++		int sum = 0 ;
++++		for(int i = 0 ; i < 5; i++){
++++			 sum += i ; 
++++			 System.out.println("i = "+i+" ; sum = "+sum);
++++			}
++++		return null;
++++}
++++
++++	
++++	/**
++++	while 循环练习
++++	*/
++++	public static String fuction2(double score){
++++		System.out.println("while 循环练习 ：");
++++		int sum = 0 ;
++++		int i = 0;
++++		while(i<5){
++++			sum += i ; 
++++			System.out.println("i = "+i+" ; sum = "+sum);
++++			i++;
++++			}
++++		return null;
++++}
++++
++++	
++++	/**
++++	do_while 循环练习
++++	*/
++++	public static String fuction3(double score){
++++		System.out.println("do_while 循环练习 ：");
++++		int sum = 0 ;
++++		int i = 0;
++++		do{
++++			sum += i ; 
++++			System.out.println("i = "+i+" ; sum = "+sum);
++++			i++;
++++			}while(i<5);
++++		return null;
++++}
++++	/**
++++	素数打印 练习
++++	*/
++++	public static String fuction4(double score){
++++		System.out.println("素数打印 练习 ：");
++++		int sum = 100 ;
++++		int i = 0;
++++		do{
++++			i=2;
++++			boolean b = false;
++++			do{
++++				if(0==sum%i){
++++					b = true;
++++					}
++++				i++;
++++				}while(i<sum/2);
++++				if(!b){
++++				System.out.println(sum + " 为素数 ；");
++++				}
++++			sum++;
++++			}while(sum<200);
++++		return null;
++++}
++++	/**
++++	打花练习
++++	*/
++++	public static String fuction5(int r){
++++		//System.out.println("素数打印 练习 ：");
++++		int i = 1;
++++		for (;i<r;i++){
++++		int j = 1;
++++			for(;j<r-i;j++){
++++				System.out.print(" ");
++++			}
++++			j=1;
++++			for(;j<=i;j++){
++++				System.out.print("* ");
++++			}
++++			//System.out.print("")
++++			System.out.println("");
++++			}
++++			return null;
++++}
++++
++++}
+++\ No newline at end of file
+++diff --git a/TestJava.java b/TestJava.java
+++new file mode 100644
+++index 0000000..c8ac223
+++--- /dev/null
++++++ b/TestJava.java
+++@@ -0,0 +1,11 @@
++++class TestJava{
++++	public static void main(String args[]){
++++		Dog d = new Dog();
++++		d.name = "旺财";
++++		d.age = 2;
++++		d.color = "花色";
++++		
++++		d.jump();
++++		System.out.println("名字是:"+d.name);		
++++		}
++++	}
+++-- 
+++1.7.6.msysgit.0
+++
++diff --git "a/Dog.java - \270\261\261\276.bak" "b/Dog.java - \270\261\261\276.bak"
++new file mode 100644
++index 0000000..188e8e5
++--- /dev/null
+++++ "b/Dog.java - \270\261\261\276.bak"	
++@@ -0,0 +1,10 @@
+++class Dog{
+++	String name;
+++	int age;
+++	String Color;
+++	
+++	void jump(){
+++	System.out.println("jump");
+++	
+++	}
+++	}
++\ No newline at end of file
++-- 
++1.7.6.msysgit.0
++
+diff --git a/0004-dfgd.patch b/0004-dfgd.patch
+new file mode 100644
+index 0000000..d9b231a
+--- /dev/null
++++ b/0004-dfgd.patch
+@@ -0,0 +1,40 @@
++From 6626b28fe59cbda5d2bc1941470165f72aaece5d Mon Sep 17 00:00:00 2001
++From: yangtao <690377261@qq.com>
++Date: Tue, 15 May 2012 14:45:37 +0800
++Subject: [PATCH 4/5] dfgd
++
++---
++ .gitignore   |    3 +++
++ Dog.java.bak |    6 +-----
++ 2 files changed, 4 insertions(+), 5 deletions(-)
++
++diff --git a/.gitignore b/.gitignore
++index 0f182a0..de03327 100644
++--- a/.gitignore
+++++ b/.gitignore
++@@ -4,3 +4,6 @@
++ *.jar
++ *.war
++ *.ear
+++*.bak
+++*.class
+++*.log
++diff --git a/Dog.java.bak b/Dog.java.bak
++index 188e8e5..0ed142b 100644
++--- a/Dog.java.bak
+++++ b/Dog.java.bak
++@@ -3,8 +3,4 @@ class Dog{
++ 	int age;
++ 	String Color;
++ 	
++-	void jump(){
++-	System.out.println("jump");
++-	
++-	}
++-	}
++\ No newline at end of file
+++	void jump()
++\ No newline at end of file
++-- 
++1.7.6.msysgit.0
++
+diff --git a/0005-delete-bak.patch b/0005-delete-bak.patch
+new file mode 100644
+index 0000000..0e5dd79
+--- /dev/null
++++ b/0005-delete-bak.patch
+@@ -0,0 +1,127 @@
++From 08e00a146f1da3dcfc62bdcdcbd5f2908e2964b3 Mon Sep 17 00:00:00 2001
++From: yangtao <690377261@qq.com>
++Date: Tue, 15 May 2012 14:46:46 +0800
++Subject: [PATCH 5/5] delete bak
++
++---
++ "Dog.java - \270\261\261\276.bak" |   10 ---------
++ Dog.java.bak                      |    6 -----
++ Test004.java.bak                  |   40 -------------------------------------
++ Test007.java.bak                  |   24 ----------------------
++ 4 files changed, 0 insertions(+), 80 deletions(-)
++ delete mode 100644 "Dog.java - \270\261\261\276.bak"
++ delete mode 100644 Dog.java.bak
++ delete mode 100644 Test004.java.bak
++ delete mode 100644 Test007.java.bak
++
++diff --git "a/Dog.java - \270\261\261\276.bak" "b/Dog.java - \270\261\261\276.bak"
++deleted file mode 100644
++index 188e8e5..0000000
++--- "a/Dog.java - \270\261\261\276.bak"	
+++++ /dev/null
++@@ -1,10 +0,0 @@
++-class Dog{
++-	String name;
++-	int age;
++-	String Color;
++-	
++-	void jump(){
++-	System.out.println("jump");
++-	
++-	}
++-	}
++\ No newline at end of file
++diff --git a/Dog.java.bak b/Dog.java.bak
++deleted file mode 100644
++index 0ed142b..0000000
++--- a/Dog.java.bak
+++++ /dev/null
++@@ -1,6 +0,0 @@
++-class Dog{
++-	String name;
++-	int age;
++-	String Color;
++-	
++-	void jump()
++\ No newline at end of file
++diff --git a/Test004.java.bak b/Test004.java.bak
++deleted file mode 100644
++index 2283d68..0000000
++--- a/Test004.java.bak
+++++ /dev/null
++@@ -1,40 +0,0 @@
++-public class Test004{
++-	public static void main(String args[]){
++-			char a= '汉';
++-			System.out.println(a);
++-			fuction1();
++-			fuction1(a);
++-			fuction2();
++-		}
++-	
++-	public static void fuction1(){
++-			boolean b = false;
++-			boolean c = true;
++-			//boolean d = 0;
++-			System.out.println("boolean false = " + b);
++-			System.out.println("boolean true = " + c);
++-			//System.out.prinln("boolean 0 = " + d);
++-		} 
++-	
++-	public static void fuction1(char param){
++-			System.out.println("char字符打印:"+param);
++-		} 
++-	
++-	public static void fuction2(){
++-			byte b = 0;
++-			short s = 0;
++-			int i = 0;
++-			long l = 0;
++-			float f = 0.1f;
++-			double d = 0;
++-			int j = (int)0.5*10;
++-			
++-		
++-			System.out.println("j="+j);
++-		} 
++-		
++-		
++-		
++-	}
++-	
++-	
++\ No newline at end of file
++diff --git a/Test007.java.bak b/Test007.java.bak
++deleted file mode 100644
++index a660424..0000000
++--- a/Test007.java.bak
+++++ /dev/null
++@@ -1,24 +0,0 @@
++-
++-public class Test007{
++-	public static void main(String args[]){
++-		double s = 83;
++-		String str = new String();
++-		str = fuction1(s);
++-		System.out.println("小明的考试结果是："+str);
++-		}
++-
++-	
++-	public static String fuction1(double score){
++-		if(score < 60){
++-				return "不及格";
++-			}else if(score>=90){
++-				return "优秀";
++-			}else if(score>=80){
++-				return "良";
++-			}else if(score>=60){
++-				return "及格";
++-			}else return "没有考试或找不到分数或分数出错";
++-			//return null;
++-		}
++-
++-}
++\ No newline at end of file
++-- 
++1.7.6.msysgit.0
++
+diff --git a/Dog.java.bak b/Dog.java.bak
+deleted file mode 100644
+index 188e8e5..0000000
+--- a/Dog.java.bak
++++ /dev/null
+@@ -1,10 +0,0 @@
+-class Dog{
+-	String name;
+-	int age;
+-	String Color;
+-	
+-	void jump(){
+-	System.out.println("jump");
+-	
+-	}
+-	}
+\ No newline at end of file
+diff --git a/Test004.java.bak b/Test004.java.bak
+deleted file mode 100644
+index 2283d68..0000000
+--- a/Test004.java.bak
++++ /dev/null
+@@ -1,40 +0,0 @@
+-public class Test004{
+-	public static void main(String args[]){
+-			char a= '汉';
+-			System.out.println(a);
+-			fuction1();
+-			fuction1(a);
+-			fuction2();
+-		}
+-	
+-	public static void fuction1(){
+-			boolean b = false;
+-			boolean c = true;
+-			//boolean d = 0;
+-			System.out.println("boolean false = " + b);
+-			System.out.println("boolean true = " + c);
+-			//System.out.prinln("boolean 0 = " + d);
+-		} 
+-	
+-	public static void fuction1(char param){
+-			System.out.println("char字符打印:"+param);
+-		} 
+-	
+-	public static void fuction2(){
+-			byte b = 0;
+-			short s = 0;
+-			int i = 0;
+-			long l = 0;
+-			float f = 0.1f;
+-			double d = 0;
+-			int j = (int)0.5*10;
+-			
+-		
+-			System.out.println("j="+j);
+-		} 
+-		
+-		
+-		
+-	}
+-	
+-	
+\ No newline at end of file
+diff --git a/Test007.java.bak b/Test007.java.bak
+deleted file mode 100644
+index a660424..0000000
+--- a/Test007.java.bak
++++ /dev/null
+@@ -1,24 +0,0 @@
+-
+-public class Test007{
+-	public static void main(String args[]){
+-		double s = 83;
+-		String str = new String();
+-		str = fuction1(s);
+-		System.out.println("小明的考试结果是："+str);
+-		}
+-
+-	
+-	public static String fuction1(double score){
+-		if(score < 60){
+-				return "不及格";
+-			}else if(score>=90){
+-				return "优秀";
+-			}else if(score>=80){
+-				return "良";
+-			}else if(score>=60){
+-				return "及格";
+-			}else return "没有考试或找不到分数或分数出错";
+-			//return null;
+-		}
+-
+-}
+\ No newline at end of file
+-- 
+1.7.6.msysgit.0
+
