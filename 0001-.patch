@@ -1,0 +1,18 @@
+From 4241e5734360bc7dcca8955e3cc08a562462225e Mon Sep 17 00:00:00 2001
+From: yangtao <690377261@qq.com>
+Date: Tue, 15 May 2012 13:59:07 +0800
+Subject: [PATCH] =?UTF-8?q?=E6=B5=8B=E8=AF=95=20=E8=A1=A5=E4=B8=81?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ 0 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ssss.txt
+
+diff --git a/ssss.txt b/ssss.txt
+new file mode 100644
+index 0000000..e69de29
+-- 
+1.7.6.msysgit.0
+

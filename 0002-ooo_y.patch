@@ -1,0 +1,412 @@
+From aa63884f95d3607acb3e133c8fa415c0a91b981b Mon Sep 17 00:00:00 2001
+From: yangtao <690377261@qq.com>
+Date: Tue, 15 May 2012 14:13:33 +0800
+Subject: [PATCH 2/2] ooo_y
+
+---
+ Dog.java         |   10 +++++
+ Dog.java.bak     |   10 +++++
+ Hello.java       |    5 +++
+ Love.java        |    5 +++
+ NewThread.java   |   29 +++++++++++++++
+ Test004.java     |   40 +++++++++++++++++++++
+ Test004.java.bak |   40 +++++++++++++++++++++
+ Test007.java     |   28 +++++++++++++++
+ Test007.java.bak |   24 ++++++++++++
+ TestFor.java     |  103 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ TestJava.java    |   11 ++++++
+ 11 files changed, 305 insertions(+), 0 deletions(-)
+ create mode 100644 Dog.java
+ create mode 100644 Dog.java.bak
+ create mode 100644 Hello.java
+ create mode 100644 Love.java
+ create mode 100644 NewThread.java
+ create mode 100644 Test004.java
+ create mode 100644 Test004.java.bak
+ create mode 100644 Test007.java
+ create mode 100644 Test007.java.bak
+ create mode 100644 TestFor.java
+ create mode 100644 TestJava.java
+
+diff --git a/Dog.java b/Dog.java
+new file mode 100644
+index 0000000..68b54d0
+--- /dev/null
++++ b/Dog.java
+@@ -0,0 +1,10 @@
++class Dog{
++	String name;
++	int age;
++	String color;
++	
++	void jump(){
++	System.out.println("jump");
++	
++	}
++	}
+\ No newline at end of file
+diff --git a/Dog.java.bak b/Dog.java.bak
+new file mode 100644
+index 0000000..188e8e5
+--- /dev/null
++++ b/Dog.java.bak
+@@ -0,0 +1,10 @@
++class Dog{
++	String name;
++	int age;
++	String Color;
++	
++	void jump(){
++	System.out.println("jump");
++	
++	}
++	}
+\ No newline at end of file
+diff --git a/Hello.java b/Hello.java
+new file mode 100644
+index 0000000..3d296c3
+--- /dev/null
++++ b/Hello.java
+@@ -0,0 +1,5 @@
++public class Hello{
++	public static void main(String args[]){
++			System.out.println("Hello world!");
++		}
++	}
+\ No newline at end of file
+diff --git a/Love.java b/Love.java
+new file mode 100644
+index 0000000..8b8294f
+--- /dev/null
++++ b/Love.java
+@@ -0,0 +1,5 @@
++public class Love{
++	public static void main(String args[]){
++			System.out.println("Baby,I love you!");
++		}
++}
+diff --git a/NewThread.java b/NewThread.java
+new file mode 100644
+index 0000000..b471fd4
+--- /dev/null
++++ b/NewThread.java
+@@ -0,0 +1,29 @@
++
++
++
++public class NewThread extends Thread{
++//Thread worker = new Thread();
++private String word;
++private int delay;
++
++public NewThread(String whatToSay, int delayTime){
++	word = whatToSay;
++	delay = delayTime;
++}
++public void run(){
++	try{
++		for(;;){
++			System.out.println(word + " ");
++			Thread.sleep(delay);//wait until next time
++		}
++	}catch(InterruptedException e){
++		return; //end this Thread
++	}
++}
++public static void main(String[] args){
++	new NewThread("PING",33).start();
++	new NewThread("PONG",100).start();
++	
++}
++
++}
+diff --git a/Test004.java b/Test004.java
+new file mode 100644
+index 0000000..f95b3da
+--- /dev/null
++++ b/Test004.java
+@@ -0,0 +1,40 @@
++public class Test004{
++	public static void main(String args[]){
++			char a= '汉';
++			System.out.println(a);
++			fuction1();
++			fuction1(a);
++			fuction2();
++		}
++	
++	public static void fuction1(){
++			boolean b = false;
++			boolean c = true;
++			//boolean d = 0;
++			System.out.println("boolean false = " + b);
++			System.out.println("boolean true = " + c);
++			//System.out.prinln("boolean 0 = " + d);
++		} 
++	
++	public static void fuction1(char param){
++			System.out.println("char字符打印:"+param);
++		} 
++	
++	public static void fuction2(){
++			byte b = 0;
++			short s = 0;
++			int i = 0;
++			long l = 0;
++			float f = 0.1f;
++			double d = 0;
++			int j = (int)(0.5*10);
++			
++		
++			System.out.println("j="+j);
++		} 
++		
++		
++		
++	}
++	
++	
+\ No newline at end of file
+diff --git a/Test004.java.bak b/Test004.java.bak
+new file mode 100644
+index 0000000..2283d68
+--- /dev/null
++++ b/Test004.java.bak
+@@ -0,0 +1,40 @@
++public class Test004{
++	public static void main(String args[]){
++			char a= '汉';
++			System.out.println(a);
++			fuction1();
++			fuction1(a);
++			fuction2();
++		}
++	
++	public static void fuction1(){
++			boolean b = false;
++			boolean c = true;
++			//boolean d = 0;
++			System.out.println("boolean false = " + b);
++			System.out.println("boolean true = " + c);
++			//System.out.prinln("boolean 0 = " + d);
++		} 
++	
++	public static void fuction1(char param){
++			System.out.println("char字符打印:"+param);
++		} 
++	
++	public static void fuction2(){
++			byte b = 0;
++			short s = 0;
++			int i = 0;
++			long l = 0;
++			float f = 0.1f;
++			double d = 0;
++			int j = (int)0.5*10;
++			
++		
++			System.out.println("j="+j);
++		} 
++		
++		
++		
++	}
++	
++	
+\ No newline at end of file
+diff --git a/Test007.java b/Test007.java
+new file mode 100644
+index 0000000..d0f9f04
+--- /dev/null
++++ b/Test007.java
+@@ -0,0 +1,28 @@
++
++public class Test007{
++	public static void main(String args[]){
++		double s = 83;
++		String str = new String();
++		str = fuction1(s);
++		System.out.println("小明的考试结果是："+str);
++		}
++
++	
++	public static String fuction1(double score){
++		if(score < 60){
++				return "不及格";
++		}
++		else if(score>=90){
++				return "优秀";
++		}
++		else if(score>=80){
++				return "良";
++		}
++		else if(score>=60){
++				return "及格";
++		}
++		else return "没有考试或找不到分数或分数出错";
++			//return null;
++		}
++
++}
+\ No newline at end of file
+diff --git a/Test007.java.bak b/Test007.java.bak
+new file mode 100644
+index 0000000..a660424
+--- /dev/null
++++ b/Test007.java.bak
+@@ -0,0 +1,24 @@
++
++public class Test007{
++	public static void main(String args[]){
++		double s = 83;
++		String str = new String();
++		str = fuction1(s);
++		System.out.println("小明的考试结果是："+str);
++		}
++
++	
++	public static String fuction1(double score){
++		if(score < 60){
++				return "不及格";
++			}else if(score>=90){
++				return "优秀";
++			}else if(score>=80){
++				return "良";
++			}else if(score>=60){
++				return "及格";
++			}else return "没有考试或找不到分数或分数出错";
++			//return null;
++		}
++
++}
+\ No newline at end of file
+diff --git a/TestFor.java b/TestFor.java
+new file mode 100644
+index 0000000..edf7bf7
+--- /dev/null
++++ b/TestFor.java
+@@ -0,0 +1,103 @@
++
++public class TestFor{
++	public static void main(String args[]){
++		double s = 83;
++		int r = 45 ;
++		String str = new String();
++		str = fuction1(s);
++		str = fuction2(s);
++		str = fuction3(s);
++		str = fuction4(s);
++		str = fuction5(r);
++		System.out.println("运行结束！");
++		}
++
++	/**
++	for 循环练习
++	*/
++	public static String fuction1(double score){
++		System.out.println("for 循环练习 ：");
++		int sum = 0 ;
++		for(int i = 0 ; i < 5; i++){
++			 sum += i ; 
++			 System.out.println("i = "+i+" ; sum = "+sum);
++			}
++		return null;
++}
++
++	
++	/**
++	while 循环练习
++	*/
++	public static String fuction2(double score){
++		System.out.println("while 循环练习 ：");
++		int sum = 0 ;
++		int i = 0;
++		while(i<5){
++			sum += i ; 
++			System.out.println("i = "+i+" ; sum = "+sum);
++			i++;
++			}
++		return null;
++}
++
++	
++	/**
++	do_while 循环练习
++	*/
++	public static String fuction3(double score){
++		System.out.println("do_while 循环练习 ：");
++		int sum = 0 ;
++		int i = 0;
++		do{
++			sum += i ; 
++			System.out.println("i = "+i+" ; sum = "+sum);
++			i++;
++			}while(i<5);
++		return null;
++}
++	/**
++	素数打印 练习
++	*/
++	public static String fuction4(double score){
++		System.out.println("素数打印 练习 ：");
++		int sum = 100 ;
++		int i = 0;
++		do{
++			i=2;
++			boolean b = false;
++			do{
++				if(0==sum%i){
++					b = true;
++					}
++				i++;
++				}while(i<sum/2);
++				if(!b){
++				System.out.println(sum + " 为素数 ；");
++				}
++			sum++;
++			}while(sum<200);
++		return null;
++}
++	/**
++	打花练习
++	*/
++	public static String fuction5(int r){
++		//System.out.println("素数打印 练习 ：");
++		int i = 1;
++		for (;i<r;i++){
++		int j = 1;
++			for(;j<r-i;j++){
++				System.out.print(" ");
++			}
++			j=1;
++			for(;j<=i;j++){
++				System.out.print("* ");
++			}
++			//System.out.print("")
++			System.out.println("");
++			}
++			return null;
++}
++
++}
+\ No newline at end of file
+diff --git a/TestJava.java b/TestJava.java
+new file mode 100644
+index 0000000..c8ac223
+--- /dev/null
++++ b/TestJava.java
+@@ -0,0 +1,11 @@
++class TestJava{
++	public static void main(String args[]){
++		Dog d = new Dog();
++		d.name = "旺财";
++		d.age = 2;
++		d.color = "花色";
++		
++		d.jump();
++		System.out.println("名字是:"+d.name);		
++		}
++	}
+-- 
+1.7.6.msysgit.0
+

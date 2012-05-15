@@ -1,0 +1,10 @@
+class Dog{
+	String name;
+	int age;
+	String Color;
+	
+	void jump(){
+	System.out.println("jump");
+	
+	}
+	}
